@@ -6,9 +6,9 @@ através dos cálculos feitos por Pitágoras.</p>
 ## Rodar a Aplicação localmente:
 <ul>
   <li>1. Rode o arquivo main da aplicação</li>
-  <li>2. Acesse "http://localhost:5000/" no seu navegador</li>
+  <li>2. Acesse <a href="http://localhost:5000/">http://localhost:5000/</a> no seu navegador</li>
 </ul>
-<p>Ou acesse o site: </p>
+<p>Ou acesse o site: <a href="https://calculadora-pitagoras.herokuapp.com/">https://calculadora-pitagoras.herokuapp.com/</a></p>
 
 ## Endpoints:
 ### Para o calculo da hipotenusa:
