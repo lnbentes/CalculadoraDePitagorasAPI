@@ -11,7 +11,7 @@ através dos cálculos feitos por Pitágoras.</p>
 <p>Ou acesse o site: <a href="https://calculadora-pitagoras.herokuapp.com/">https://calculadora-pitagoras.herokuapp.com/</a></p>
 
 ## Endpoints:
-### Para o calculo da hipotenusa:
+### Para o cálculo da hipotenusa:
 <p>GET: /hipotenusa/{cateto_1}/{cateto_2}</p>
 <p>Descrição:</p>
 <ul>
@@ -26,7 +26,7 @@ através dos cálculos feitos por Pitágoras.</p>
   <li>500: Erro na Aplicação!</li>
 </ul>
 
-### Para o calculo dos catetos:
+### Para o cálculo dos catetos:
 <p>GET: /cateto/{hipotenusa_entrada}/{cateto_entrada}</p>
 <p>Descrição:</p>
 <ul>
