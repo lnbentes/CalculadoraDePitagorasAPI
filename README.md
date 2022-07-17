@@ -43,5 +43,6 @@ através dos cálculos feitos por Pitágoras.</p>
 
 ## Tecnologias usadas:
 <ul>
-  <li>pip install flask</li>
+  <li>flask</li>
+  <li>gunicorn</li>
 </ul>
