@@ -1,15 +1,30 @@
-import string
+import math
 
 from flask import Flask, request, jsonify
+from src.server.Calculo import Calculo
 
 app = Flask(__name__)
+m = Calculo()
 
 
-@app.route("/calcular/<numero1>/<numero2>", methods=["GET"])
-def calcular(numero1, numero2):
-    numero = {"numero1": numero1,
-              "numero2": numero2}
+@app.route("/")
+def homePage():
+    return "Bem vindo"
+
+
+@app.route("/hipotenusa/<cateto_1>/<cateto_2>", methods=["GET"])
+def hipotenusa(cateto_1, cateto_2):
+
+    numero = {"hipotenusa": m.hipotenusa(cateto_1, cateto_2)}
     return jsonify(numero)
 
 
-app.run()
+@app.route("/cateto/<hipotenusa_entrada>/<cateto_entrada>", methods=["GET"])
+def cateto(hipotenusa_entrada, cateto_entrada):
+
+    numero = {"cateto": m.cateto(hipotenusa_entrada, cateto_entrada)}
+    return jsonify(numero)
+
+
+if __name__ == '__main__':
+    app.run()
