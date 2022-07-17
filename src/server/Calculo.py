@@ -21,7 +21,7 @@ class Calculo:
         c_1 = float(cateto_ponto)
 
         if c_1 >= h_1:
-            return "Math erro a hipotenusa tem que ser maior que o cateto"
+            raise Exception("A hipotenusa tem que ser maior que o cateto")
         cateto = math.sqrt((math.pow(h_1, 2) - math.pow(c_1, 2)))
         format_cateto = "{:.2f}".format(cateto)
         return format_cateto
