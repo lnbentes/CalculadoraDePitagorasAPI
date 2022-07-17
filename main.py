@@ -14,7 +14,7 @@ def homePage():
 
 @app.route("/hipotenusa/<cateto_1>/<cateto_2>", methods=["GET"])
 def hipotenusa(cateto_1, cateto_2):
-    numero = {"hipotenusa": cal.hipotenusa(cateto_1, cateto_2)}
+    numero = {"resultado": cal.hipotenusa(cateto_1, cateto_2)}
     return jsonify(numero)
 
 
@@ -25,7 +25,7 @@ def cateto(hipotenusa_entrada, cateto_entrada):
     if cateto_calculado == "erro":
         return "Erro matemático: A hipotenusa tem que ser maior que o cateto", 400
 
-    numero = {"cateto": cateto_calculado}
+    numero = {"resultado": cateto_calculado}
     return jsonify(numero)
 
 
