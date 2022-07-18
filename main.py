@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, render_template
 from src.Matematica.Calculo import Calculo
 from src.Conversoes.Converter import Converter
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 cal = Calculo()
 conv = Converter()
 

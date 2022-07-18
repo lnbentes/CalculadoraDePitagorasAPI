@@ -53,4 +53,5 @@ através dos cálculos feitos por Pitágoras.</p>
 <ul>
   <li>flask</li>
   <li>gunicorn</li>
+  <li>flask_cors</li>
 </ul>
