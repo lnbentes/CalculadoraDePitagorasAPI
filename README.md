@@ -43,6 +43,12 @@ através dos cálculos feitos por Pitágoras.</p>
   <li>500: Erro na Aplicação!</li>
 </ul>
 
+## Esquemas:
+### Hipotenusa:
+{"resultado": string}
+### Cateto:
+{"resultado": string}
+
 ## Tecnologias usadas:
 <ul>
   <li>flask</li>
